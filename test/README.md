@@ -72,4 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### `API Link`
 
-https://github.com/Dhananjay2010/react_test/tree/master/api
+https://github.com/Dhananjay2010/react-test-api
+
+
