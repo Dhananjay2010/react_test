@@ -1,17 +1,18 @@
 import React from "react"
 
 class Search extends React.Component {
-    state: {
-        currinput:"";
+    state= {
+        currinput: "",
     }
 
     render() {
         return (
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="City.." onChange={(e)=>{
+                <input type="text" class="form-control" placeholder="City.." onChange={(e) => {
                     this.setState({
-                        currinput:e.currentTarget.value
+                        currinput: e.currentTarget.value
                     })
+                    this.props.AddCity(this.state.currinput);
                 }}></input>
             </div>
         )

@@ -31,6 +31,7 @@ class Dropdownanimal extends React.Component {
                                 this.setState({
                                     currAnimal:e
                                 })
+                                this.props.AddAnimal(this.state.currAnimal);
                             }}>{e}</a></li>
                         )
                     })}

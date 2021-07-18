@@ -30,6 +30,7 @@ class Dropdownbreed extends React.Component {
                             this.setState({
                                 currBreed:e
                             })
+                            this.props.AddBreed(this.state.currBreed);
                         }}>{e}</a></li>
                     })}
                 </ul>

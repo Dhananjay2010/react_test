@@ -1,20 +1,8 @@
 import React from "react"
 
 class Table extends React.Component {
-    state = {
-        allData: []
-    }
+    state = {}
 
-    componentDidMount() {
-
-        fetch("/danimals").then(function (res) {
-            return res.json()
-        }).then((json) => {
-            this.setState({
-                allData: json
-            })
-        })
-    }
 
     render() {
         return (
@@ -29,7 +17,7 @@ class Table extends React.Component {
                     </tr>
                 </thead>
                 <tbody>
-                    {this.state.allData.map((e) => {
+                    {this.props.DataPassed.map((e) => {
                         return (
                             <tr key={e.id}>
                                 <th scope="row">{e.name}</th>
